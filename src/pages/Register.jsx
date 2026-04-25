@@ -4,7 +4,7 @@ import { FiUser, FiLock, FiMail, FiEdit3 } from 'react-icons/fi'
 import { useAuth } from '../context/AuthContext'
 import toast from 'react-hot-toast'
 
-const HERO_REG = '/kritik/silen.jpg'
+const HERO_REG = '/silen.jpg'
 
 export default function Register() {
   const { register } = useAuth()
@@ -43,7 +43,7 @@ export default function Register() {
         {/* Brand — tanpa emoji */}
         <div className="auth-brand slide-up" style={{ animationDelay: '0.1s' }}>
 
-          <span className="auth-brand-name"></span>
+
         </div>
 
         <form onSubmit={handleSubmit} className="auth-form">

@@ -5,10 +5,10 @@ import { supabase } from '../lib/supabase'
 import { useAuth } from '../context/AuthContext'
 import TopicCard from '../components/TopicCard'
 
-const TAGS = ['#Semua', '#Infrastruktur', '#Pendidikan', '#Kesehatan', '#Hukum', '#Ekonomi', '#Sosial', '#BPS', 'PPPK']
+const TAGS = ['#Semua', '#Infrastruktur', '#Pendidikan', '#Kesehatan', '#Hukum', '#Ekonomi', '#Sosial', '#BPS', 'PPPK', 'MBG']
 
 // Pakai gambar hooded figure dengan tanda X merah
-const HERO_BG = '/kritik/diam.jpg'
+const HERO_BG = '/diam.jpg'
 
 export default function Home() {
   const { user } = useAuth()
@@ -38,11 +38,10 @@ export default function Home() {
     <div className="fade-in">
       {/* ── Hero Banner ── */}
       <div className="hero-banner">
-        <img src={HERO_BG} alt="Ruang Kritik — Suarakan Pendapatmu" />
+        <img src={HERO_BG} alt="Ruang Kritik" />
         <div className="hero-overlay" />
-        {/* Teks di atas gambar */}
         <div className="hero-text">
-
+          <p className="hero-tagline"></p>
         </div>
         <div className="hero-cta">
           <Link to={user ? '/create-topic' : '/login'} className="btn-primary">

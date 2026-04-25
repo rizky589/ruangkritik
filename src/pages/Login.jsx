@@ -4,7 +4,7 @@ import { FiUser, FiLock } from 'react-icons/fi'
 import { useAuth } from '../context/AuthContext'
 import toast from 'react-hot-toast'
 
-const HERO_LOGIN = '/kritik/silen.jpg'
+const HERO_LOGIN = '/silen.jpg'
 
 export default function Login() {
   const { login } = useAuth()
