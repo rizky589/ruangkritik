@@ -32,6 +32,7 @@ export default function App() {
         </Routes>
       </main>
       <Footer />
+      Website sedang maintenance 🚧
     </div>
   )
 }
